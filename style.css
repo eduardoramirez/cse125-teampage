@@ -1,0 +1,17 @@
+.titles {
+  color: #34495E;
+}
+
+.subtitles {
+  color: #95A5A6;
+}
+
+p {
+  color: #34495E;
+}
+
+.tile-image {
+  height: 225px;
+  margin: 31px 0 27px;
+  vertical-align: bottom;
+}

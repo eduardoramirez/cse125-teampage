@@ -1,0 +1,376 @@
+extends main.jade
+
+block styles
+  link(rel='stylesheet', href='style.css')
+
+block content
+  div(class='container')
+    h2(class='titles') Project Description
+    h6(class='subtitles') What kind of game are you planning to build?
+    p
+      | A four person pseudo wrestling game where the players fight amongst 
+      | each other to knock themselves off the stage. There will be various 
+      | power up hats that provide players special abilities in their 
+      | pursuit to be the last player standing. 
+          
+    h6(class='subtitles') What are the goals of the game, how do players win, how do they lose?
+    p
+      | The goal of the game is to be the last player standing in the arena.
+      | The final player that has not been pushed out of the stage is the 
+      | winner, and the rest of the players are the losers. It is possible 
+      | for players to draw if players fall off at the same time.
+        
+    h6(class='subtitles') What are the interesting or unique aspects to your game?
+    p
+      | The most interesting part of our game is the hats aspect. Each of 
+      | the hats will have a unique ability that will help the player win. 
+      | For example, a hat could provide the player with a grappling hook 
+      | or a hat that allows you to teleport from one location to another.
+        
+    h6(class='subtitles') What are the list of features of your game? 
+    table(class='table table-bordered')
+      thead
+        tr
+          th Feature List
+          th Game Ideas
+          th Graphics
+          th Networking
+          
+      tbody
+        tr
+          td Must have
+          td 
+            ul 
+              li 5 hats
+              li 1 stage
+              li 4 characters
+              li Sound
+          td
+            ul
+              li Bounding box representation of players
+              li Different color for each team
+              li Camera view to encapsulate all players
+              li Lighting
+              li Basic Vertex and Fragment Shading
+              li Collision Detection
+              li Skybox
+              li Animated Characters
+              li Loader to parse object, animation, textures, etc
+          td
+            ul
+              li Multiple clients in same session
+              li Implement Google Protobufs (message classes)
+              li Represent the game
+              li Event handling (fanning or sequential)
+              li State communication
+              li Config files
+              li Parse inputs/events
+              li Support TCP
+              li Server/client loops 
+
+        tr
+          td Would Be Really Nice
+          td 
+            ul
+              li Characters have different costumes
+              li Controller support
+              li Music
+          td 
+            ul
+              li Optimized Collision Detection
+              li Particle Effects
+              li Shadows
+              li Physics (i.e. ragdoll)
+              li UI to configure game/ activate debug mode
+          td 
+            ul
+              li Save state (stats, character names, profile)
+              li Improve serialization using Boost
+        tr
+          td Cool But Only If Ahead of Schedule
+          td
+            ul
+              li More maps (3 stages)
+              li More hats (10 hats)
+              li Hat Editor
+              li When put on a hat, change costume
+          td 
+            ul
+              li More detail in the maps (adding extra objects that can crush you)
+              li Ability to destroy or change aspect of the stage such as increasing gravity, etc.
+              li WebGL integration 
+          td 
+            ul
+              li Frank Ocean in the server
+              li UDP support
+      
+    h2(class='titles') Group Management
+    h6(class='subtitles') What are the major roles in your group's management?
+    p
+      | For the first part of the quarter we are going to break up into 
+      | two subteams: Graphics and Network, in order to work on the infrastructure 
+      | of each. As the project progresses we will restructure into a 
+      | unified team with separate tasks.
+    table(class='table table-bordered')
+      thead
+        tr
+          th Graphics & Modeling
+          th Network & Game Logic Implementation
+          th Art
+      tbody
+        tr
+          td Cindy, Tim, Tiffany
+          td Atyansh (AJ), Brian, Eduardo, Victor 
+          td Tiffany
+    
+    h6(class='subtitles') How will decisions be made? By leader, consensus?
+    p
+      | Decisions will be made by majority. Everyone must vote and come to 
+      | a decision, you cannot abstain from voting.
+        
+    h6(class='subtitles') How will you communicate? Email, meetings in the lab, discussion board?
+    p
+      | One weekly meeting with the entire team.
+      br
+      | We will use FB Messenger for quick anecdotes/scheduling meetings and Slack for 
+      | project development (particularly for integrations).
+        
+    h6(class='subtitles') How will you know when you're off schedule, and how will you deal with schedule slips?
+    p
+      | During the weekly meetings we will check our projected timeline to 
+      | see how we are doing. The timeline will of course update as the 
+      | project progresses but should remain relatively stable. If we believe
+      | as a team that one aspect of the project is behind, we will direct 
+      | resources to that. Further, if we as individuals fall behind we 
+      | should raise that in the team meetings to resolve it as soon as possible.
+        
+    h6(class='subtitles') Who will produce the weekly group status reports?
+    p
+      | Everyone will submit their weekly report on the Google Drive. 
+      | Eduardo will collect the weekly reports and update the website accordingly.
+
+
+    h2(class='titles') Project Development
+    h6(class='subtitles') What tools will you use?
+    ul 
+      li Git ( GitHub )
+      li Xcode
+      li OpenGL
+      li Maya
+      li Visual Studio
+      li Photoshop
+      li Paint Tool SAI
+      li Trello
+      li Google Drive
+        
+    h6(class='subtitles') How will you do testing?
+    ul
+      li Unit testing
+      li Test game, play with the team members
+      li User testing by letting people outside the team play
+        
+    h6(class='subtitles') How will you do documentation?
+    p
+      | GitHub Wiki Pages
+
+    h2(class='titles') Project Schedule
+    table(class='table table-bordered')
+      thead
+        tr
+          th Week
+          th 2
+          th 3
+          th 4
+          th 5
+          th 6
+          th 7
+          th 8
+          th 9
+          th 10
+          
+      tbody
+        tr
+          td Milestone
+          td MVP
+          td MVP
+          td Alpha
+          td Alpha
+          td Alpha
+          td Beta
+          td Beta
+          td Beta
+          td GM
+        tr 
+          td Graphics
+          td 
+            p 
+              | Skybox
+              br
+              | Camera
+              br
+              | Lighting
+              br
+              | Basic Buffers
+              br
+              | Model Load
+              br
+              | Basic Textures
+              br
+              | Basic Shaders
+              br
+              | Math Classes
+              br
+              | Basic Animation
+          td 
+            p
+              | Animation
+          td
+            p
+              | Bounding Boxes
+          td
+            p
+              | Bounding Boxes
+          td
+            p
+              | Shaders
+              br
+              | Effects (Particles)
+          td 
+            p
+              | UI
+          td 
+            p 
+              | Testing
+          td 
+            p 
+              | Testing
+          td 
+            p 
+              | Stabilization
+        tr
+          td Networking
+          td
+            p
+              | Echo Server
+              br
+              | Multiple Clients
+          td
+            p
+              | Serialization
+              br
+              | Parse Events
+          td
+            p
+              | Profiling
+              br
+              | Logging    
+          td
+            p
+              | Improve Networking Code
+          td
+          td
+          td
+          td
+          td
+        tr
+          td  Art
+          td 
+            p Concept art
+          td
+            p Basic character modeling and rigging
+          td 
+            p Stage
+          td 
+            p Skybox
+          td
+            p 
+              | Hats
+              br
+              | Map Objects
+          td
+            p 
+              | Hats
+              br
+              | Map Objects
+              br
+              | Start Screen
+          td
+            p 
+              | Hats
+              br
+              | Map Objects
+          td
+            p Finalization  
+          td
+            p Finalization  
+            
+        tr
+          td Game Engine 
+          td 
+            p
+              | Control flow of event handling
+              br
+              | Event definition
+              br
+              | Represent game (define the state)
+          td
+            p
+              | Have events affect server state
+              br
+              | Set up initial state
+          td
+            p
+              | basic movement controls
+              br
+              | Collision
+          td
+            p
+              | Refine Gameplay
+              br
+              | Combat
+          td 
+            p
+              | Hat Mechanics
+          td 
+            p
+              | Hat Mechanics
+          td 
+            p
+              | Testing 
+          td 
+            p
+              | Testing
+          td 
+            p
+              | Stabilization 
+              
+        tr
+          td  Input/Config
+          td
+            p 
+              | Basic Config Files
+              br
+              | Keyboard/Mouse Integration
+          td
+            p Config Template
+          td
+          td
+          td
+          td
+          td
+          td
+          td
+        
+        tr
+          td Music
+          td
+          td
+          td
+          td
+          td
+            p Basic Audio
+          td
+          td
+            p More Audio
+          td
+          td

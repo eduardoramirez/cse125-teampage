@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Deerstalker</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="dist/css/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/flat-ui.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button><a href="home.html" class="navbar-brand">Deerstalker</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#media">Media</a></li>
+            <li><a href="designdoc.html">Design Document</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="titles">Project Description</h2>
+      <h6 class="subtitles">What kind of game are you planning to build?</h6>
+      <p>
+        A four person pseudo wrestling game where the players fight amongst 
+        each other to knock themselves off the stage. There will be various 
+        power up hats that provide players special abilities in their 
+        pursuit to be the last player standing. 
+      </p>
+      <h6 class="subtitles">What are the goals of the game, how do players win, how do they lose?</h6>
+      <p>
+        The goal of the game is to be the last player standing in the arena.
+        The final player that has not been pushed out of the stage is the 
+        winner, and the rest of the players are the losers. It is possible 
+        for players to draw if players fall off at the same time.
+      </p>
+      <h6 class="subtitles">What are the interesting or unique aspects to your game?</h6>
+      <p>
+        The most interesting part of our game is the hats aspect. Each of 
+        the hats will have a unique ability that will help the player win. 
+        For example, a hat could provide the player with a grappling hook 
+        or a hat that allows you to teleport from one location to another.
+      </p>
+      <h6 class="subtitles">What are the list of features of your game? </h6>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Feature List</th>
+            <th>Game Ideas</th>
+            <th>Graphics</th>
+            <th>Networking</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Must have</td>
+            <td> 
+              <ul> 
+                <li>5 hats</li>
+                <li>1 stage</li>
+                <li>4 characters</li>
+                <li>Sound</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Bounding box representation of players</li>
+                <li>Different color for each team</li>
+                <li>Camera view to encapsulate all players</li>
+                <li>Lighting</li>
+                <li>Basic Vertex and Fragment Shading</li>
+                <li>Collision Detection</li>
+                <li>Skybox</li>
+                <li>Animated Characters</li>
+                <li>Loader to parse object, animation, textures, etc</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Multiple clients in same session</li>
+                <li>Implement Google Protobufs (message classes)</li>
+                <li>Represent the game</li>
+                <li>Event handling (fanning or sequential)</li>
+                <li>State communication</li>
+                <li>Config files</li>
+                <li>Parse inputs/events</li>
+                <li>Support TCP</li>
+                <li>Server/client loops </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Would Be Really Nice</td>
+            <td> 
+              <ul>
+                <li>Characters have different costumes</li>
+                <li>Controller support</li>
+                <li>Music</li>
+              </ul>
+            </td>
+            <td> 
+              <ul>
+                <li>Optimized Collision Detection</li>
+                <li>Particle Effects</li>
+                <li>Shadows</li>
+                <li>Physics (i.e. ragdoll)</li>
+                <li>UI to configure game/ activate debug mode</li>
+              </ul>
+            </td>
+            <td> 
+              <ul>
+                <li>Save state (stats, character names, profile)</li>
+                <li>Improve serialization using Boost</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Cool But Only If Ahead of Schedule</td>
+            <td>
+              <ul>
+                <li>More maps (3 stages)</li>
+                <li>More hats (10 hats)</li>
+                <li>Hat Editor</li>
+                <li>When put on a hat, change costume</li>
+              </ul>
+            </td>
+            <td> 
+              <ul>
+                <li>More detail in the maps (adding extra objects that can crush you)</li>
+                <li>Ability to destroy or change aspect of the stage such as increasing gravity, etc.</li>
+                <li>WebGL integration </li>
+              </ul>
+            </td>
+            <td> 
+              <ul>
+                <li>Frank Ocean in the server</li>
+                <li>UDP support</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="titles">Group Management</h2>
+      <h6 class="subtitles">What are the major roles in your group's management?</h6>
+      <p>
+        For the first part of the quarter we are going to break up into 
+        two subteams: Graphics and Network, in order to work on the infrastructure 
+        of each. As the project progresses we will restructure into a 
+        unified team with separate tasks.
+      </p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Graphics & Modeling</th>
+            <th>Network & Game Logic Implementation</th>
+            <th>Art</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cindy, Tim, Tiffany</td>
+            <td>Atyansh (AJ), Brian, Eduardo, Victor </td>
+            <td>Tiffany</td>
+          </tr>
+        </tbody>
+      </table>
+      <h6 class="subtitles">How will decisions be made? By leader, consensus?</h6>
+      <p>
+        Decisions will be made by majority. Everyone must vote and come to 
+        a decision, you cannot abstain from voting.
+      </p>
+      <h6 class="subtitles">How will you communicate? Email, meetings in the lab, discussion board?</h6>
+      <p>One weekly meeting with the entire team.<br>We will use FB Messenger for quick anecdotes/scheduling meetings and Slack for 
+        project development (particularly for integrations).
+      </p>
+      <h6 class="subtitles">How will you know when you're off schedule, and how will you deal with schedule slips?</h6>
+      <p>
+        During the weekly meetings we will check our projected timeline to 
+        see how we are doing. The timeline will of course update as the 
+        project progresses but should remain relatively stable. If we believe
+        as a team that one aspect of the project is behind, we will direct 
+        resources to that. Further, if we as individuals fall behind we 
+        should raise that in the team meetings to resolve it as soon as possible.
+      </p>
+      <h6 class="subtitles">Who will produce the weekly group status reports?</h6>
+      <p>
+        Everyone will submit their weekly report on the Google Drive. 
+        Eduardo will collect the weekly reports and update the website accordingly.
+      </p>
+      <h2 class="titles">Project Development</h2>
+      <h6 class="subtitles">What tools will you use?</h6>
+      <ul> 
+        <li>Git ( GitHub )</li>
+        <li>Xcode</li>
+        <li>OpenGL</li>
+        <li>Maya</li>
+        <li>Visual Studio</li>
+        <li>Photoshop</li>
+        <li>Paint Tool SAI</li>
+        <li>Trello</li>
+        <li>Google Drive</li>
+      </ul>
+      <h6 class="subtitles">How will you do testing?</h6>
+      <ul>
+        <li>Unit testing</li>
+        <li>Test game, play with the team members</li>
+        <li>User testing by letting people outside the team play</li>
+      </ul>
+      <h6 class="subtitles">How will you do documentation?</h6>
+      <p>GitHub Wiki Pages</p>
+      <h2 class="titles">Project Schedule</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Milestone</td>
+            <td>MVP</td>
+            <td>MVP</td>
+            <td>Alpha</td>
+            <td>Alpha</td>
+            <td>Alpha</td>
+            <td>Beta</td>
+            <td>Beta</td>
+            <td>Beta</td>
+            <td>GM</td>
+          </tr>
+          <tr> 
+            <td>Graphics</td>
+            <td> 
+              <p>
+                 
+                Skybox<br>Camera<br>Lighting<br>Basic Buffers<br>Model Load<br>Basic Textures<br>Basic Shaders<br>Math Classes<br>Basic Animation
+              </p>
+            </td>
+            <td> 
+              <p>Animation</p>
+            </td>
+            <td>
+              <p>Bounding Boxes</p>
+            </td>
+            <td>
+              <p>Bounding Boxes</p>
+            </td>
+            <td>
+              <p>Shaders<br>Effects (Particles)</p>
+            </td>
+            <td> 
+              <p>UI</p>
+            </td>
+            <td> 
+              <p>
+                 
+                Testing
+              </p>
+            </td>
+            <td> 
+              <p>
+                 
+                Testing
+              </p>
+            </td>
+            <td> 
+              <p>
+                 
+                Stabilization
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Networking</td>
+            <td>
+              <p>Echo Server<br>Multiple Clients</p>
+            </td>
+            <td>
+              <p>Serialization<br>Parse Events</p>
+            </td>
+            <td>
+              <p>Profiling<br>Logging    </p>
+            </td>
+            <td>
+              <p>Improve Networking Code</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> Art</td>
+            <td> 
+              <p>Concept art</p>
+            </td>
+            <td>
+              <p>Basic character modeling and rigging</p>
+            </td>
+            <td> 
+              <p>Stage</p>
+            </td>
+            <td> 
+              <p>Skybox</p>
+            </td>
+            <td>
+              <p>
+                 
+                Hats<br>Map Objects
+              </p>
+            </td>
+            <td>
+              <p>
+                 
+                Hats<br>Map Objects<br>Start Screen
+              </p>
+            </td>
+            <td>
+              <p>
+                 
+                Hats<br>Map Objects
+              </p>
+            </td>
+            <td>
+              <p>Finalization  </p>
+            </td>
+            <td>
+              <p>Finalization  </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Game Engine </td>
+            <td> 
+              <p>Control flow of event handling<br>Event definition<br>Represent game (define the state)</p>
+            </td>
+            <td>
+              <p>Have events affect server state<br>Set up initial state</p>
+            </td>
+            <td>
+              <p>basic movement controls<br>Collision</p>
+            </td>
+            <td>
+              <p>Refine Gameplay<br>Combat</p>
+            </td>
+            <td> 
+              <p>Hat Mechanics</p>
+            </td>
+            <td> 
+              <p>Hat Mechanics</p>
+            </td>
+            <td> 
+              <p>Testing </p>
+            </td>
+            <td> 
+              <p>Testing</p>
+            </td>
+            <td> 
+              <p>Stabilization </p>
+            </td>
+          </tr>
+          <tr>
+            <td> Input/Config</td>
+            <td>
+              <p>
+                 
+                Basic Config Files<br>Keyboard/Mouse Integration
+              </p>
+            </td>
+            <td>
+              <p>Config Template</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Music</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>Basic Audio</p>
+            </td>
+            <td></td>
+            <td>
+              <p>More Audio</p>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+  </body>
+</html>
