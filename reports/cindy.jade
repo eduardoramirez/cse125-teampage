@@ -1,7 +1,8 @@
 extends ../main.jade
 
 block styles
-  link(rel='stylesheet', href='/cse125-teampage/style.css')
+  link(rel='stylesheet', href='../style.css')
+  link(rel='stylesheet', href='../dist/css/vendor/bootstrap/css/bootstrap.min.css')
   
 block content
   div(class='container')
@@ -33,3 +34,7 @@ block content
     img(src='http://mashable.com/wp-content/uploads/2013/07/Supernatural-Dean.gif', class='img-rounded')
 
     br
+
+block script
+  script(src='../dist/js/vendor/jquery.min.js')
+  script(src='../dist/js/flat-ui.min.js')
