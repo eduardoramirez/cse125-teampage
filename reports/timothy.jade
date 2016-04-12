@@ -1,1 +1,36 @@
-extends main.jade
+extends ../main.jade
+
+block styles
+  link(rel='stylesheet', href='/cse125-teampage/style.css')
+  
+block content
+  div(class='container')
+    h1 Timothy's reports
+    h2(class='titles') Week 2
+    h6(class='subtitles') Concrete Goals
+    p
+      | - Setup the basic framework with modern OpenGL with shader, lighting, camera and parsers
+      br
+      | - Integrate basic client server calls with graphics
+      
+    h6(class='subtitles') Goals Accomplished
+    p
+      | - Was able to get a cube to move from keyboard commands
+      br
+      | - Basic graphic framework was setup to render cube
+      
+    h6(class='subtitles') Reasons for Unaccomplished Goals
+    p
+      | - Integrating the shader with an OBJ parser was more difficult than we thought
+
+    h6(class='subtitles') Goals for Next Week 
+    p
+      | - Finish integrating the parsers with shaders
+      br
+      | - Refactor to incorporate lighting and camera
+      br
+      | - Start full client server relationship
+    
+    h6(class='subtitles') Morale
+    p
+      | - not much caffeine was dealt out
