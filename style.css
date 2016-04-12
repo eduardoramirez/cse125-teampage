@@ -28,3 +28,8 @@ p {
 .img-comment {
   text-align: center;
 }
+
+.teamButton {
+  width: 200px;
+  margin: auto auto;
+}
