@@ -26,9 +26,11 @@ html(lang='en')
             li
               a(href='/cse125-teampage/designdoc.html') Design Document
             li
-              a(href='/cse125-teampage/team.html') Team
+              a(href='/cse125-teampage/team.html') Team + Reports
 
     block content
     
     script(src='/cse125-teampage/dist/js/vendor/jquery.min.js')
     script(src='/cse125-teampage/dist/js/flat-ui.min.js')
+    script(type='text/javascript').
+      videojs.options.flash.swf = "/cse125-teampage/dist/js/vendor/video-js.swf"
