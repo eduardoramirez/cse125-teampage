@@ -19,3 +19,12 @@ p {
 .yebot {
   font-family: 'Permanent Marker', cursive;
 }
+
+.myVideo {
+  width: 75%;
+  padding-bottom: 0;
+}
+
+.img-comment {
+  text-align: center;
+}
