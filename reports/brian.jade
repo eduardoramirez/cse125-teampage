@@ -1,1 +1,35 @@
-extends main.jade
+extends ../main.jade
+
+block styles
+  link(rel='stylesheet', href='/cse125-teampage/style.css')
+  
+block content
+  div(class='container')
+    h2(class='titles') Week 2
+    h6(class='subtitles') Concrete Goals
+    p
+      | - Implement Networking Logic for Server/Client
+      br
+      | - Integrate Graphics code with Networking Code
+      
+    h6(class='subtitles') Goals Accomplished
+    p
+      | - Set up Networking framework using Boost Asio. Server can broadcast to multiple clients.
+      br
+      | - Merge(Graphics, Networking)
+      
+    h6(class='subtitles') Reasons for Unaccomplished Goals
+    p
+      | Currently on track :D
+
+    h6(class='subtitles') Goals for Next Week 
+    p
+      | - Learn Bullet Physics and integrate Physics with existing code.
+      br
+      | - Start working on Game logic.
+      br
+      | - Look more into serialization/deserialization
+    
+    h6(class='subtitles') Morale
+    p
+      | [10]
