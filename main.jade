@@ -13,21 +13,22 @@ html(lang='en')
       link(rel='stylesheet', href='dist/css/flat-ui.css')
 
   body
-    div(class='navbar navbar-inverse navbar-static-top', role='navigation')
-      div(class='container')
-        div(class='navbar-header')
-          button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='.navbar-collapse')
-            span(class='sr-only') Toggle navigation
-          a(class='navbar-brand', href='index.html') Deerstalker
+    block header
+      div(class='navbar navbar-inverse navbar-static-top', role='navigation')
+        div(class='container')
+          div(class='navbar-header')
+            button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='.navbar-collapse')
+              span(class='sr-only') Toggle navigation
+            a(class='navbar-brand', href='index.html') Deerstalker
 
-        div(class='navbar-collapse collapse')
-          ul(class='nav navbar-nav')
-            li
-              a(href='#media') Media
-            li
-              a(href='designdoc.html') Design Document
-            li
-              a(href='team.html') Team + Reports
+          div(class='navbar-collapse collapse')
+            ul(class='nav navbar-nav')
+              li
+                a(href='#media') Media
+              li
+                a(href='designdoc.html') Design Document
+              li
+                a(href='team.html') Team + Reports
 
     block content
     
