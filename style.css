@@ -30,6 +30,13 @@ p {
 }
 
 .teamButton {
-  width: 200px;
-  margin: auto auto;
+  margin: -20px 42% 20px;
+}
+
+.reportButton {
+  margin-top: -30px;
+}
+
+.mycontainer {
+  padding-bottom: 50px;
 }

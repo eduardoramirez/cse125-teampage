@@ -6,12 +6,21 @@ block styles
   link(rel='stylesheet', href='style.css')
 
 block content
-  div(class='container')
+  div(class='mycontainer container')
     div(class='container')
       img(src='img/team.jpg', class='center-block img-rounded img-responsive')
       p(class='text-center lead') Man that'd be so Kanye
       
-      a(class='teamButton btn btn-primary btn-large btn-block', href='reports/team.html') Team Reports
+      div(class='teamButton btn-group')
+        button(class='btn btn-primary dropdown-toggle', type='button', data-toggle='dropdown')
+          | Team Reports 
+          span(class='caret')
+        ul(class='dropdown-menu', role='menu')
+          li
+            a(href="team/week2.html") Week 2 
+          li
+            a(href='team/week3.html') Week 3
+            
       br
       
     div(class='row')
@@ -20,48 +29,117 @@ block content
           img(src='img/atyansh.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Atyansh Jaiswal
           p Bitcoin Huckster
-          a(class='btn btn-primary btn-large btn-block', href='reports/atyansh.html') Reports
+          //- a(class='btn btn-primary btn-large btn-block', href='My Reports/atyansh.html') My Reports
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="atyansh/week2.html") Week 2 
+              li
+                a(href='atyansh/week3.html') Week 3
       div(class='col-sm-6 col-md-3')  
         div(class='tile')
           img(src='img/victor.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Victor Alor
           p Team Treasurer/Consultant
-          a(class='btn btn-primary btn-large btn-block', href='reports/victor.html') Reports
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="victor/week2.html") Week 2 
+              li
+                a(href='victor/week3.html') Week 3
       div(class='col-sm-6 col-md-3')  
         div(class='tile')
           img(src='img/eddy.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Eduardo Ramirez
           p Team Stefan/Copyright Consultant
-          a(class='btn btn-primary btn-large btn-block', href='reports/eduardo.html') Reports
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="eduardo/week2.html") Week 2 
+              li
+                a(href='eduardo/week3.html') Week 3
+                
       div(class='col-sm-6 col-md-3')  
         div(class='tile')
           img(src='img/brian.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Brian KJ Choi 
           p The Undertaker
-          a(class='btn btn-primary btn-large btn-block', href='reports/brian.html') Reports
-          
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="brian/week2.html") Week 2 
+              li
+                a(href='brian/week3.html') Week 3
+                
     div(class='row')
       div(class='col-sm-6 col-md-3')  
         div(class='tile')
           img(src='img/cindy.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Cindy Vu
           p Indecisive Graphics Person
-          a(class='btn btn-primary btn-large btn-block', href='reports/cindy.html') Reports
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="cindy/week2.html") Week 2 
+              li
+                a(href='cindy/week3.html') Week 3
+          
       div(class='col-sm-6 col-md-3')  
         div(class='tile')
           img(src='img/timothy.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Timothy Kua
           p Caffeine Dealer
-          a(class='btn btn-primary btn-large btn-block', href='reports/timothy.html') Reports
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="timothy/week2.html") Week 2 
+              li
+                a(href='timothy/week3.html') Week 3
+          
       div(class='col-sm-6 col-md-3')  
         div(class='tile')
           img(src='img/tiffany.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Tiffany Lam
           p Artist
-          a(class='btn btn-primary btn-large btn-block', href='reports/tiffany.html') Reports
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="tiffany/week2.html") Week 2 
+              li
+                a(href='tiffany/week3.html') Week 3
+          
       div(class='col-sm-6 col-md-3')  
         div(class='tile')
           img(src='img/yebot.jpg', class='img-rounded tile-image')
           h3(class='tile-title') Yebot 
           p Shaman
-          a(class='btn btn-primary btn-large btn-block', href='reports/yebot.html') Yereports
+          div(class='reportButton btn-group')
+            button(class='btn btn-primary btn-large btn-block dropdown-toggle', type='button', data-toggle='dropdown')
+              | My Reports 
+              span(class='caret')
+            ul(class='dropdown-menu', role='menu')
+              li
+                a(href="yebot/week2.html") Week 2 
+              li
+                a(href='yebot/week3.html') Week 3
