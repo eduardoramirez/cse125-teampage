@@ -11,6 +11,51 @@ block header
 block content
   div(class='container')
     h2 Deerstalker's reports
+    h3(class='titles') Week 3
+    p
+      | Things are still going pretty well. We achieved our major milestone of 
+      | integrating Physics and new Graphics models to create a mini game of 
+      | movable and colliding mangos. Currently the mangos are setup as simple 
+      | boxes in the physics engine. Here’s a video of showing the physics
+      | engine in action with the new models.
+      br
+    div(class='myVideo center-block')
+      video(class='myVideo video-js', preload='auto', poster='', data-setup='{}')
+        source(src='../img/vid_week2_1.mp4', type='video/mp4')
+      p(class='img-comment') 
+        | One client shows the mango models, while the other client shows the 
+        | actual shape of the cube objects for a better perspective.
+    p
+      | This was a huge milestone for us since this involved implementing the 
+      | full server/game loop and moving all the game logic to server side 
+      | (along with integration of Physics).
+    p
+      | Along with that, our artist has been hard at work on designing concept 
+      | art for our game and modeling them in 3d. Here’s some pictures of the progress-
+    img(src='../img/img_week2_1.png', class='center-block img-rounded')
+    p(class='img-comment') 
+      | Some Concept Art
+    img(src='../img/img_week2_3.png', class='center-block img-rounded')
+    p(class='img-comment') 
+      | Level themed costumes
+    img(src='../img/img_week2_2.png', class='center-block img-rounded')
+    p(class='img-comment') 
+      | Some interesting Hat Designs along with character concept art. 
+    img(src='../img/img_week2_4.png', class='center-block img-rounded')
+    p(class='img-comment') 
+      | Character Design
+    img(src='../img/img_week2_5.png', class='center-block img-rounded')
+    p(class='img-comment') 
+      | 3D modeling.
+    br
+    p
+      | We’ve also been testing our game over the network with multiple
+      | computers and have been having a bit too much fun playing around.
+    div(class='myVideo center-block')
+      video(class='myVideo video-js', preload='auto', poster='', data-setup='{}')
+        source(src='../img/vid_week2_2.mp4', type='video/mp4')
+    br
+    
     h3(class='titles') Week 2
     p
       | Things are going well so far. We have set up a basic framework for both 
@@ -41,6 +86,9 @@ block content
 
     br
 
+block video
+  script(src='https://vjs.zencdn.net/4.7/video.js')
+  
 block script
   script(src='../dist/js/vendor/jquery.min.js')
   script(src='../dist/js/flat-ui.min.js')
