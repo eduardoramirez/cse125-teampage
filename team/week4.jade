@@ -1,0 +1,32 @@
+extends ../report
+
+block report
+  h2 Deerstalker's reports
+  h3(class='titles') Week 3
+  p
+    | This was a slow week for us because most of our team members had other
+    | obligations. We added gamepad integration within our game and made the 
+    | game playable with a gamepad.
+  br
+  p
+    | On the Physics side, we were able to load a compound shaped object using the
+    | Mango object model, creating a Mango shaped physical body using Maya. 
+    | Here’s a video showing the new Mango physics in action-
+  div(class='myVideo center-block')
+    video(class='myVideo video-js', height='150', preload='auto', poster='', data-setup='{}')
+      source(src='../img/vid_week4_1.mp4', type='video/mp4')
+    p(class='img-comment') 
+      | The new Mango rigid bodies allow the Mangos to roll around like real mangos
+  p
+    | On the Graphics side we were able to start getting the animation setup. 
+    | After doing some research, we decided to use FBX since it’s more widely 
+    | used and ASSIMP supports it.  We were able to so far successfully load 
+    | external FBX files into our game.
+  br
+  p
+    | In terms of art, we now have a basic 3D model of our character with a 
+    | skeleton. However the skeleton has not yet been rigged and bound to the model.
+  br
+
+block video
+  script(src='https://vjs.zencdn.net/4.7/video.js')
