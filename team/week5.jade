@@ -1,0 +1,46 @@
+extends ../report
+
+block report
+  h2 Deerstalker's reports
+  h3(class='titles') Week 5
+  p
+    | This was pretty good week for us. We got proper camera and skybox setup 
+    | working within the engine, giving us a better environment to experiment
+    | with game physics and logic in.
+  p
+    | We integrated Tiffany’s skeleton models within the game as player models, 
+    | and added the ability to shoot mangos for each player. We’re still working
+    | on shooting orientation, but the shooting mechanics should become more 
+    | precise once we have dynamic controller interfaces for players set up 
+    | (also making players more player like).
+  br
+  div(class='myVideo center-block')
+    video(class='myVideo video-js', height='150', preload='auto', poster='', data-setup='{}')
+      source(src='../img/vid_week5_1.mp4', type='video/mp4')
+    p(class='img-comment') 
+      | Shooting mechanism at work.
+  br
+  p
+    | We also have been working on item spawning logic and items (hats) can now 
+    | spawn randomly at any chosen intervals.
+  br
+  div(class='myVideo center-block')
+    video(class='myVideo video-js', height='150', preload='auto', poster='', data-setup='{}')
+      source(src='../img/vid_week5_2.mp4', type='video/mp4')
+    p(class='img-comment') 
+      | Item drops at work.
+  br
+  p
+    | Our model that Tiffany drew can also now be loaded by ASSIMP. Seemed like
+    | we needed to just export the model as one mesh.  Now, the next thing for
+    | animation is to get the skeleton to show properly and animate it. 
+    | Currently able to load the bones in and will continue to work on it to
+    | display properly.
+  br
+  img(src='../img/img_week5_1.png', class='center-block img-rounded')
+  p(class='img-comment') 
+    | A shot of the skin painting process
+  br
+
+block video
+  script(src='https://vjs.zencdn.net/4.7/video.js')
