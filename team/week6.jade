@@ -1,0 +1,39 @@
+extends ../report
+
+block report
+  h2 Deerstalker's reports
+  h3(class='titles') Week 6
+  p
+    | Good progress on the Graphics side of the game. Slightly behind on the
+    | game logic side. More work was done with game logic, in particular player
+    | deaths, win conditions, level design. However, all of the progress is in
+    | very elementary phases right now.
+  p
+    | We were finally able to get animation to work properly with someone else’s
+    |  FBX file :D.  The next thing we need to do is animate our own character
+    | which hopefully won’t be too bad with the infrastructure setup.
+  br
+  div(class='myVideo center-block')
+    video(class='myVideo video-js', height='150', preload='auto', poster='', data-setup='{}')
+      source(src='../img/vid_week6_1.mp4', type='video/mp4')
+    p(class='img-comment') 
+      | Animation
+  br
+  p
+    | We have our character model running animated in Maya that needs to be 
+    | imported into the game properly.  
+  p 
+    | Camera now follows mangos. Yay! There’s a video attached somewhere.
+  br
+  div(class='myVideo center-block')
+    video(class='myVideo video-js', height='150', preload='auto', poster='', data-setup='{}')
+      source(src='../img/vid_week6_2.mp4', type='video/mp4')
+    p(class='img-comment') 
+      | Camera Follow
+  br
+  p
+    | Next week is going to be crucial for us as we plan to put the game into alpha stage.
+  br
+
+block video
+  script(src='https://vjs.zencdn.net/4.7/video.js')
