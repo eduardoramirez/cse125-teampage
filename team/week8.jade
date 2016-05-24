@@ -4,23 +4,40 @@ block report
   h2 Deerstalker's reports
   h3(class='titles') Week 8
   p
-    | 
-    
-  img(src='../img/img_week8_1.png', class='center-block img-rounded')
-  p(class='img-comment') 
-    | Picture comment
+    | Progress has been really smooth on all fronts. We have a Main Menu and 
+    | Character Selection screen now. Added 5 different hats in total on the
+    | graphics side though hat game logic is only up for a couple hats. Hats 
+    | are now loaded directly as items instead of crates (though maybe crates
+    | are better as a surprise?).
+  
   p
-    | 
-  br
+    | Most importantly, we finally have our character animation working. 
+    | Tiffany has been really excited to work on the more fun animating portion
+    | now. We’ve added a couple animations (running and punching), though we
+    | plan to add a few more (jumping, stunned, propeller hat spinning, maybe 
+    | a taunt).
+
   p
-    a(href='') Here’s a video of our progress
-  br
+    | Our code went through a bit of refactoring and we’ve moved to building 
+    | our code in release mode now that we have animations and almost bug free gameplay.
+  
   p
-    | 
-  img(src='../img/img_week8_2.png', class='center-block img-rounded')
-  p(class='img-comment') 
-    | Picture comment
+    | Character movement was switched back to using forces (while preserving 
+    | the orientation of the models). The Physics simulation was sped up so the
+    | gameplay feels much more natural now (though we plan on refining it more).
+
+  p
+    | We plan on adding more brawler elements to our game to make it more
+    | exciting. Hat abilities would be controlled by 2 buttons now, planning to 
+    | add other items that turnoff/lower gravity for a bit, release a shockwave, etc.
+
+  p
+    | Was originally planning to have sound this week but pushing that to next week for now.
+
+  p
+    a(href='https://www.youtube.com/watch?v=yz5jUcFPwLI') Here’s a video of our progress
   br
+
 
 block video
   script(src='https://vjs.zencdn.net/4.7/video.js')
